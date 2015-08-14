@@ -10,8 +10,8 @@ class FizzBuzz
     @fizz_buzzer = FizzBuzzer.new 
   end
 
-  def display(number, *numbers)
-    [number, numbers].flatten.each do |number|
+  def display(numbers)
+    numbers.each do |number|
       puts fizz_buzzer.fizz_or_buzz(number)
     end
   end
