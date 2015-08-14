@@ -1,10 +1,9 @@
-require 'spec_helper'
-
 describe FizzBuzz do
   let(:test_output) { TestingOutput.new }
   let(:fizz_buzz)   { FizzBuzz.new(output: test_output) }
+  
   describe '#display' do
-    it 'prints fizz or buzz a set of given number' do
+    it 'prints fizz or buzz for a set of given numbers' do
       allow(fizz_buzz.fizz_buzzer).to receive(:fizz_or_buzz).with(3).and_return('Fizz')
       allow(fizz_buzz.fizz_buzzer).to receive(:fizz_or_buzz).with(5).and_return('Buzz')
       allow(fizz_buzz.fizz_buzzer).to receive(:fizz_or_buzz).with(15).and_return('FizzBuzz')

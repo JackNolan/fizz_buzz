@@ -1,5 +1,3 @@
-require 'spec_helper'
-
 describe FizzBuzzer do
   let(:fizz_buzzer) { FizzBuzzer.new }
 
