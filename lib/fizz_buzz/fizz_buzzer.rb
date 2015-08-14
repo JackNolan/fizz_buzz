@@ -3,7 +3,7 @@ class FizzBuzzer
   BUZZ = 'Buzz'
 
   def fizz_or_buzz(number)
-    if divisable?(number, 3) && divisable?(number, 5)
+    if divisable?(number, 15)
       FIZZ + BUZZ
     elsif divisable?(number, 3)
       FIZZ

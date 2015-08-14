@@ -2,6 +2,7 @@ require 'spec_helper'
 
 describe FizzBuzzer do
   let(:fizz_buzzer) { FizzBuzzer.new }
+
   describe '#fizz_or_buzz' do
     it 'returns "Fizz" when the number is divisible by 3' do
       expect(fizz_buzzer.fizz_or_buzz(3)).to eq 'Fizz'
