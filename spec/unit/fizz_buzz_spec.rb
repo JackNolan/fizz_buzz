@@ -24,4 +24,19 @@ describe FizzBuzz do
       fizz_buzz.display(1..6)
     end
   end
+
+  describe '#initialize' do
+    context "optional display" do
+      let(:output)    { TestingOutput.new }
+      let(:fizz_buzz) { FizzBuzz.new(output: output) }
+
+      it 'writes to the display' do
+        expect{fizz_buzz.display([2,3,4])}.to change{output.get_writes.count}.from(0).to(3)
+      end  
+
+      it 'defaults to STDOUT' do
+        expect( FizzBuzz.new.output).to eq STDOUT
+      end
+    end
+  end
 end

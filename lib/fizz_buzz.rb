@@ -4,15 +4,16 @@ Dir["lib/fizz_buzz/*"].each do |f|
 end
 
 class FizzBuzz
-  attr_reader :fizz_buzzer
+  attr_reader :fizz_buzzer, :output
 
-  def initialize
+  def initialize(output: STDOUT)
     @fizz_buzzer = FizzBuzzer.new 
+    @output      = output
   end
 
   def display(numbers)
     numbers.each do |number|
-      puts fizz_buzzer.fizz_or_buzz(number)
+      output.puts fizz_buzzer.fizz_or_buzz(number)
     end
   end
 end
