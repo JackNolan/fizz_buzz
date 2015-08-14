@@ -11,6 +11,8 @@ class FizzBuzz
     @output      = output
   end
 
+  # Takes an enumerable list of numbers
+  # Displays each number's corresponding fizz buzz.
   def display(numbers)
     numbers.each do |number|
       output.puts fizz_buzzer.fizz_or_buzz(number)

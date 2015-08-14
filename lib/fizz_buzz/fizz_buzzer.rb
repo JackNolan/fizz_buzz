@@ -2,6 +2,7 @@ class FizzBuzzer
   FIZZ = 'Fizz'
   BUZZ = 'Buzz'
 
+  # Accepts an number and returns it fizzbuzzed
   def fizz_or_buzz(number)
     if divisable?(number, 15)
       FIZZ + BUZZ
