@@ -8,18 +8,21 @@
 require './lib/fizz_buzz'
 
 fizz_buzz = FizzBuzz.new
-fizz_buzz.display([1,3,5,15]) =>
+fizz_buzz.display_each([1,3,5,15]) =>
 "1"
 "Fizz"
 "Buzz"
 "FizzBuzz"
 
-fizz_buzz.display(1..5) =>
+fizz_buzz.display_each(1..5) =>
 "1"
 "2"
 "Fizz"
 "4"
 "Buzz"
+
+fizz_buzz.display(3) =>
+"Fizz"
 ```
 
 #### Advanced Usage:
